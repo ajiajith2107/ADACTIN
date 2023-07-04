@@ -26,6 +26,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 
 	public static WebDriver driver;
@@ -33,8 +35,8 @@ public class BaseClass {
 	public static WebDriver getBrowser(String browserName) throws Exception {
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-						+ "\\src\\test\\resource\\com\\adactin\\driver\\chromedriver.exe");
+
+				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
@@ -45,18 +47,17 @@ public class BaseClass {
 						+ "\\src\\test\\resource\\com\\adactin\\driver\\IEDriverServer.exe");
 				driver = new InternetExplorerDriver();
 			} else if (browserName.equalsIgnoreCase("edge")) {
-						System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")
-								+ "\\src\\test\\resource\\com\\adactin\\driver\\msedgedriver.exe");
-						driver = new InternetExplorerDriver();
-						
-			}else if (browserName.equalsIgnoreCase("gridchrome")) {
+				System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")
+						+ "\\src\\test\\resource\\com\\adactin\\driver\\msedgedriver.exe");
+				driver = new InternetExplorerDriver();
+
+			} else if (browserName.equalsIgnoreCase("gridchrome")) {
 				DesiredCapabilities chrome = DesiredCapabilities.chrome();
 				chrome.setPlatform(Platform.WINDOWS);
-				//chrome.setCapability(CapabilityType.PLATFORM, "WIN8.1");
+				// chrome.setCapability(CapabilityType.PLATFORM, "WIN8.1");
 				URL url = new URL("http://192.168.43.116:4444/wd/hub");
 				driver = new RemoteWebDriver(url, chrome);
-			}
-			else {
+			} else {
 				throw new Exception("Browser Name is invalid");
 			}
 			driver.manage().window().maximize();
@@ -375,12 +376,13 @@ public class BaseClass {
 			throw new RuntimeException();
 		}
 	}
-	
-	public static String webtableData(WebElement element,int row, int column) {
-		
+
+	public static String webtableData(WebElement element, int row, int column) {
+
 		try {
 			waitforElementVisibility(element);
-			WebElement particularData = driver.findElement(By.xpath("//table/tbody/tr[" + row + "]/td[" + column + "]"));
+			WebElement particularData = driver
+					.findElement(By.xpath("//table/tbody/tr[" + row + "]/td[" + column + "]"));
 			String text = particularData.getText();
 			return text;
 		} catch (Exception e) {
