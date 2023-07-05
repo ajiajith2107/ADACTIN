@@ -11,13 +11,22 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+<<<<<<< HEAD
+	
 	<dependencies>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
 		<!--
 		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 =======
+=======
+
+=======
+	<dependencies>
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
+>>>>>>> fa3cc03187580bd64d05f14200bb6c7b876e526a
 		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 >>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<dependency>
@@ -84,6 +93,21 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
 		</dependency>
+<<<<<<< HEAD
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.4</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+
+=======
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -148,6 +172,7 @@
 			<artifactId>extentreports-cucumber6-adapter</artifactId>
 			<version>2.1.0</version>
 		</dependency>
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 	</dependencies>
 <<<<<<< HEAD
 
