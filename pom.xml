@@ -2,29 +2,33 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.adactin.demo</groupId>
 	<artifactId>AdctInProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>AdctInProject</name>
 	<url>http://maven.apache.org</url>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
+<<<<<<< HEAD
 
 		<!--
 		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+=======
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.4.0</version>
 		</dependency>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -59,7 +63,10 @@
 			<version>6.8.1</version>
 			<type>pom</type>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extentreports-cucumber6-adapter</artifactId>
@@ -81,7 +88,16 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.0.4</version>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.0</version>
+		</dependency>
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -120,16 +136,23 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
+<<<<<<< HEAD
 		<!--
 		https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+=======
+		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extentreports-cucumber6-adapter</artifactId>
 			<version>2.1.0</version>
 		</dependency>
 	</dependencies>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e253251f3894e961503d4d5d011d305ba123ea76
 	<build>
 		<plugins>
 			<plugin>
