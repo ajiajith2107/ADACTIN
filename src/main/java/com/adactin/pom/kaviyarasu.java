@@ -1,5 +1,5 @@
 package com.adactin.pom;
 
-public class kaviyarasu {
+public class Kaviyarasu {
 
 }
